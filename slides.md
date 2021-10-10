@@ -47,7 +47,7 @@ class: 'text-white'
 2. Branching strategy
 
 ## Why ? 
-**Because it's up to the company you will work on**
+**Because it's up to the company you will work for**
 
 ---
 layout: center
@@ -79,14 +79,24 @@ What the hell is it ?
 layout: center
 class: 'text-white'
 ---
-
 <style type="text/css">
-    img {
-        width: 400px;
+    img,video {
+        width: 75%;
     }
 </style>
-![blobs](object.png)
+![Gif](Demo1.gif)
 
+---
+layout: center
+class: 'text-white'
+---
+<style type="text/css">
+    img {
+        width: 60%;
+    }
+</style>
+
+![blobs](object.png)
 ---
 layout: center
 class: 'text-white'
@@ -148,13 +158,28 @@ class: 'text-white'
 layout: center
 class: 'text-white'
 ---
-# Can I avoid writing my own Parse ? Hhhh... You are boring
+# Can I avoid writing my own Parser ? Hhhh... You are boring
 `git cat-file -p 7f4e1ed98d0c0d3f8a80271b1e61cb91eeefb037`
 
 ---
 layout: center
 class: 'text-white'
 ---
+<style type="text/css">
+    img {
+        width: 700px;
+    }
+</style>
+[![asciicast](https://asciinema.org/a/Kkj2dLRJ3lGk68orI5qe3VCfl.svg)](https://asciinema.org/a/Kkj2dLRJ3lGk68orI5qe3VCfl)
+---
+layout: center
+class: 'text-white'
+---
+<style type="text/css">
+    img {
+        width: 500px;
+    }
+</style>
 Each time you call `git add` it creates a new file in `objects` folder
 ![Blobs](blob_store.jpg)
 > ! Important , blob files DO NOT contain information about original file name. Who does then ? 
@@ -180,6 +205,11 @@ Changes to be committed:
         new file:   Main.java
 
 ```
+---
+layout: center
+class: 'text-white'
+---
+[![asciicast](https://asciinema.org/a/5EWI0GaWZB4LxdzykMlBR3800.svg)](https://asciinema.org/a/5EWI0GaWZB4LxdzykMlBR3800)
 ---
 layout: center
 class: 'text-white'
@@ -214,11 +244,21 @@ But what If I change `Main.java` and add it again to index file ? It will overri
 layout: center
 class: 'text-white'
 ---
+[![asciicast](https://asciinema.org/a/4ArtL7UHX6ZZah3ckbq4gNzi6.svg)](https://asciinema.org/a/4ArtL7UHX6ZZah3ckbq4gNzi6)
+---
+layout: center
+class: 'text-white'
+---
 ## Meet tree objects(snapshot of index file)
 ![Tree](Tree.png)
 `git write-tree` will create a new tree object<br>
 You can verify it using `git-cat` mentioned above
 
+---
+layout: center
+class: 'text-white'
+---
+[![asciicast](https://asciinema.org/a/osJJUrM7whZL1cv3SNBU1C3UU.svg)](https://asciinema.org/a/osJJUrM7whZL1cv3SNBU1C3UU)
 ---
 layout: center
 class: 'text-white'
@@ -235,6 +275,12 @@ Motivation. We have a list of blobs saved in tree object. But there is no inform
 2. When tree object was created ?
 3. Why it was created ?
 
+---
+layout: center
+class: 'text-white'
+---
+
+[![asciicast](https://asciinema.org/a/osJJUrM7whZL1cv3SNBU1C3UU.svg)](https://asciinema.org/a/osJJUrM7whZL1cv3SNBU1C3UU)
 ---
 layout: center
 class: 'text-white'
@@ -274,3 +320,4 @@ class: 'text-white'
 #### asds... what ? 
 
 TODO: branches
+
