@@ -79,11 +79,6 @@ What the hell is it ?
 layout: center
 class: 'text-white'
 ---
-<style type="text/css">
-    img,video {
-        width: 75%;
-    }
-</style>
 ![Gif](Demo1.gif)
 
 ---
@@ -92,10 +87,10 @@ class: 'text-white'
 ---
 <style type="text/css">
     img {
-        width: 60%;
+        width: 50%;
+        color: red;
     }
 </style>
-
 ![blobs](object.png)
 ---
 layout: center
@@ -135,8 +130,16 @@ decompressed_contents = zlib.decompress(compressed_contents)
 print(decompressed_contents)
 
 ```
-
-
+---
+layout: center
+class: 'text-white'
+---
+<style type="text/css">
+    img {
+        width: 500px;
+    }
+</style>
+[![asciicast](https://asciinema.org/a/Kkj2dLRJ3lGk68orI5qe3VCfl.svg)](https://asciinema.org/a/Kkj2dLRJ3lGk68orI5qe3VCfl)
 ---
 layout: center
 class: 'text-white'
@@ -154,6 +157,9 @@ class: 'text-white'
     )
 
 ```
+
+
+
 ---
 layout: center
 class: 'text-white'
@@ -167,17 +173,7 @@ class: 'text-white'
 ---
 <style type="text/css">
     img {
-        width: 700px;
-    }
-</style>
-[![asciicast](https://asciinema.org/a/Kkj2dLRJ3lGk68orI5qe3VCfl.svg)](https://asciinema.org/a/Kkj2dLRJ3lGk68orI5qe3VCfl)
----
-layout: center
-class: 'text-white'
----
-<style type="text/css">
-    img {
-        width: 500px;
+        width: 400px;
     }
 </style>
 Each time you call `git add` it creates a new file in `objects` folder
@@ -279,12 +275,6 @@ Motivation. We have a list of blobs saved in tree object. But there is no inform
 layout: center
 class: 'text-white'
 ---
-
-[![asciicast](https://asciinema.org/a/osJJUrM7whZL1cv3SNBU1C3UU.svg)](https://asciinema.org/a/osJJUrM7whZL1cv3SNBU1C3UU)
----
-layout: center
-class: 'text-white'
----
 ## Let's create a commit object(as always, it's stored inside objects folder )
 ` git commit-tree -m 'I created Main.java' c49ca09403970a3fee23aefefd229fdf07fd58b9`
 
@@ -302,6 +292,12 @@ I created Main.java
 2. author - with time
 3. committer with time
 4. Message
+
+---
+layout: center
+class: 'text-white'
+---
+[![asciicast](https://asciinema.org/a/1vL8kEO0UocoGyhVpctqjVQDd.svg)](https://asciinema.org/a/1vL8kEO0UocoGyhVpctqjVQDd)
 ---
 layout: center
 class: 'text-white'
@@ -315,9 +311,82 @@ class: 'text-white'
 layout: center
 class: 'text-white'
 ---
+## I need to track both versions of Main.java
+
+### Commit object can have a parent
+
+---
+layout: center
+class: 'text-white'
+---
+
+[![asciicast](https://asciinema.org/a/tyxCbqE758D0mZ5KyVCOzvqcZ.svg)](https://asciinema.org/a/tyxCbqE758D0mZ5KyVCOzvqcZ)
+
+
+---
+layout: center
+class: 'text-white'
+---
+
+![Graph](graph.jpg)
+---
+layout: center
+class: 'text-white'
+---
 ## Hey Almas can you checkout my commit<br> with a hash `asdsadasdwssdfsd`
 
 #### asds... what ? 
 
-TODO: branches
+---
+layout: center
+class: 'text-white'
+---
 
+## Meet branches
+![Branch](5q2u6h.jpg)
+
+---
+layout: center
+class: 'text-white'
+---
+# Let's create a branch that points to the last commit(reversed order)
+
+---
+layout: center
+class: 'text-white'
+---
+[![asciicast](https://asciinema.org/a/RLURJh70at914swaaXv7yMIpI.svg)](https://asciinema.org/a/RLURJh70at914swaaXv7yMIpI)
+
+---
+layout: center
+class: 'text-white'
+---
+`git update-ref refs/heads/reverse 639...`
+
+## Branch is 
+1. Just a file inside of `.git/refs/heads/` folder
+2. The content of a file is just a commit's hash
+
+---
+layout: center
+class: 'text-white'
+---
+
+# The HEAD
+## The question now is, when you run git branch reverse, how does Git know the SHA-1 of the last commit? The answer is the HEAD file
+
+---
+layout: center
+class: 'text-white'
+---
+[![asciicast](https://asciinema.org/a/CMozn1fc3SzRTdljOpDRHjlM4.svg)](https://asciinema.org/a/CMozn1fc3SzRTdljOpDRHjlM4)
+
+---
+layout: center
+class: 'text-white'
+---
+## Diff and Restore
+[![asciicast](https://asciinema.org/a/Qnof4hXbFn8ICgtMdsS7C00QW.svg)](https://asciinema.org/a/Qnof4hXbFn8ICgtMdsS7C00QW)
+
+
+TODO: merge
