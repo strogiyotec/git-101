@@ -327,7 +327,7 @@ class: 'text-white'
 layout: center
 class: 'text-white'
 ---
-
+## Direct acyclic graph(DAG)
 ![Graph](graph.jpg)
 ---
 layout: center
@@ -388,5 +388,46 @@ class: 'text-white'
 ## Diff and Restore
 [![asciicast](https://asciinema.org/a/Qnof4hXbFn8ICgtMdsS7C00QW.svg)](https://asciinema.org/a/Qnof4hXbFn8ICgtMdsS7C00QW)
 
+---
+layout: center
+class: 'text-white'
+---
 
-TODO: merge
+## Let's talk about merges
+[![asciicast](https://asciinema.org/a/DdC929IhUVOvryE2fzKgcK6sm.svg)](https://asciinema.org/a/DdC929IhUVOvryE2fzKgcK6sm)
+
+---
+layout: center
+class: 'text-white'
+---
+
+![Before](before-merge.png)
+
+---
+layout: center
+class: 'text-white'
+---
+
+![After](after-merge.png)
+
+---
+layout: center
+class: 'text-white'
+---
+## git log is a little bit confusing
+[![asciicast](https://asciinema.org/a/5TOM6JmErSGhb7Vb6GeHLfqFu.svg)](https://asciinema.org/a/5TOM6JmErSGhb7Vb6GeHLfqFu)
+
+---
+layout: center
+class: 'text-white'
+---
+## Conflicts
+
+<style type="text/css">
+    img {
+        width: 250px;
+    }
+</style>
+![Merge](5qhk7q.jpg)
+
+TODO show when merge not conflict and actual conflict
