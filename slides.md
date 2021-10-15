@@ -430,4 +430,105 @@ class: 'text-white'
 </style>
 ![Merge](5qhk7q.jpg)
 
-TODO show when merge not conflict and actual conflict
+---
+layout: center
+class: 'text-white'
+---
+
+## Will we have conflict here ? 
+
+[![asciicast](https://asciinema.org/a/xP5yiVhmdUZ735WAa9ep5oQty.svg)](https://asciinema.org/a/xP5yiVhmdUZ735WAa9ep5oQty)
+
+---
+layout: center
+class: 'text-white'
+---
+## Git is smart
+![After](after-merge-conf.png)
+
+
+---
+layout: center
+class: 'text-white'
+---
+
+## When git doesn't know which line to use
+
+[![asciicast](https://asciinema.org/a/36WBFmZGG0dflRMt6TmizBiat.svg)](https://asciinema.org/a/36WBFmZGG0dflRMt6TmizBiat)
+
+---
+layout: center
+class: 'text-white'
+---
+# How to resolve ? 
+## Just choose one of two versions and commit it
+
+
+---
+layout: center
+class: 'text-white'
+---
+![Lazy](https://camo.githubusercontent.com/6b4cb2fb7e4224d7749b79549ee815392712334b8f873b32b8caeac141f29722/68747470733a2f2f692e696d6775722e636f6d2f6f594237436a382e706e67)
+---
+layout: center
+class: 'text-white'
+---
+[![asciicast](https://asciinema.org/a/XGEAOqly9CVIQjsoCxwwXkO01.svg)](https://asciinema.org/a/XGEAOqly9CVIQjsoCxwwXkO01)
+
+---
+layout: center
+class: 'text-white'
+---
+## When merge can make life complicated
+![Rebase](5qjm2j.jpg)
+
+---
+layout: center
+class: 'text-white'
+---
+# Meet Rebase
+[![asciicast](https://asciinema.org/a/rAw2D0E6pUVs5e6ceI7kTOGT0.svg)](https://asciinema.org/a/rAw2D0E6pUVs5e6ceI7kTOGT0)
+
+---
+layout: center
+class: 'text-white'
+---
+## How Merge would look like
+![No merge](no-merge.png)
+
+---
+layout: center
+class: 'text-white'
+---
+![Before](before-rebase.png)
+
+---
+layout: center
+class: 'text-white'
+---
+
+![Master](rebase-master.png)
+
+---
+layout: center
+class: 'text-white'
+---
+![Feature](feature-to-master.png)
+
+---
+layout: center
+class: 'text-white'
+---
+> What I cannot create, I do not understand
+
+(Richard Feynman)
+## Meet [dzhigit](https://github.com/strogiyotec/dzhigit)
+![dzhigit](2021-10-15_09-09.png)
+
+---
+layout: center
+class: 'text-white'
+---
+# And Remember, Do not trust me
+## I Know nothing
+
